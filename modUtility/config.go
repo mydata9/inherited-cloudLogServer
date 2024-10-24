@@ -30,3 +30,7 @@ func config_Initialize() error {
 
 	return nil
 }
+
+func Config_ReadString(key string) string {
+	return GetSingleGatlingConfig().Get(key)
+}
